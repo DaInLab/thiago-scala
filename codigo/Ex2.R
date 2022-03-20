@@ -31,10 +31,10 @@ grid.arrange(t)
 dev.off()
 
 png(filename = "./graficos/ex2-1.png", width = 1000, height = 800)
-barplot(valorcalculos, main="Medidas de Posicao", xlab="Taxas", ylab="Resultado", names.arg = nomecalculos, beside=TRUE, ylim=range(pretty(c(0, Quartis))), cex.names = 0.9, xaxs = "i", col = rainbow(20))
+barplot(valorcalculos, main="Medidas de Posicao", xlab="Taxas", ylab="Resultado", names.arg = nomecalculos, beside=TRUE, ylim=range(pretty(c(0, variancia))), cex.names = 0.9, xaxs = "i", col = rainbow(20))
 dev.off()
 
 png(filename = "./graficos/ex2-2.png", width = 1000, height = 800)
-barplot(valorCalculos, main="Medidas de Dispersao", xlab="Taxas", ylab="Resultado", names.arg = nomeCalculos, beside=TRUE, ylim=range(pretty(c(0, Sd))), cex.names = 0.9, xaxs = "i", col = rainbow(20))
+barplot(valorCalculos, main="Medidas de Dispersao", xlab="Taxas", ylab="Resultado", names.arg = nomeCalculos, beside=TRUE, ylim=range(pretty(c(0, desvio))), cex.names = 0.9, xaxs = "i", col = rainbow(20))
 dev.off()
 
